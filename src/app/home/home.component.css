@@ -12,10 +12,10 @@
   height: 500px;
 }
 
-.personal-pic {
+.displayed-pic {
   height: 700px;
 }
 
-.resume {
-  height: 500px;
+.side-pic {
+  width: 500px;
 }

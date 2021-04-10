@@ -1,0 +1,27 @@
+
+.wrapper {
+text-align: center;
+}
+
+.section{
+  width:100px;
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.section:hover{
+  background-color: lightblue;
+}
+
+.icon{
+ width: 20px;
+}
+
+.label{
+text-align: center;
+}
+
+  

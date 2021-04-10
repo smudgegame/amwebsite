@@ -12,4 +12,11 @@ export class ContentsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+	scrollViewTo(id: string){
+		const el = document.getElementById(id)!
+		console.log(el)
+		el.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'})
+	}
+
 }
