@@ -8,6 +8,7 @@ import { PersonalComponent } from './personal/personal.component';
 import { EducationComponent } from './education/education.component';
 import { CodingComponent } from './coding/coding.component';
 import { ArtworkComponent } from './artwork/artwork.component';
+import { MathModule } from './math.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ArtworkComponent } from './artwork/artwork.component';
     ArtworkComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MathModule.forRoot() 
   ],
   providers: [],
   bootstrap: [AppComponent]
