@@ -1,0 +1,21 @@
+.title {
+  text-align: center;
+}
+
+.picture-frame {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+.pixel-art {
+  height: 500px;
+}
+
+.personal-pic {
+  height: 700px;
+}
+
+.resume {
+  height: 500px;
+}
