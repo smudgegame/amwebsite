@@ -1,11 +1,12 @@
 .title {
   text-align: center;
+  width: 100%;
 }
 
 .picture-frame {
   display: inline-block;
-  width: 33%;
   text-align: center;
+  margin: auto;
 }
 
 .pixel-art {
@@ -13,9 +14,9 @@
 }
 
 .displayed-pic {
-  height: 700px;
+  max-width: 350px;
 }
 
 .side-pic {
-  width: 500px;
+  max-width: 300px;
 }
