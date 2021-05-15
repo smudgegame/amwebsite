@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Deploying
+
+Aws commands for test
+```
+aws s3 ls
+aws sts get-caller-identity
+```
+
+Deploying content to aws
+```
+aws s3 rm s3://aaronmargraff.com --recursive && aws s3 cp dist/amwebsite s3://aaronmargraff.com --recursive
+```
