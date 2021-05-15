@@ -1,6 +1,9 @@
-name: Build Angular
+name: Deploy Angular
 
-on: push
+on:
+  push:
+    branches:
+      - 'master'
 jobs:
   build:
     runs-on: ubuntu-18.04
@@ -23,3 +26,8 @@ jobs:
         run: |
           npm i
           npm run build-prod
+      - name: Deploy
+        run: aws s3 rm s3://aaronmargraff.com --recursive && aws s3 cp dist/amwebsite s3://aaronmargraff.com --recursive
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
