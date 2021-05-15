@@ -8,9 +8,6 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x]
 
     steps:
       - uses: actions/checkout@v1
@@ -22,17 +19,14 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Node ${{ matrix.node-version }}
+      - name: Node 12.x
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 12.x
       - name: npm install and npm run build
         run: |
           npm i
-          npm run build --prod
-  deployS3:
-    runs-on: ubuntu-latest
-    steps:
+          npm run build-prod
       - uses: chrislennon/action-aws-cli@v1.1
       - run: aws s3 ls
         env:
