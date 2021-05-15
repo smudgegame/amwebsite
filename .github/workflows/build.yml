@@ -1,8 +1,10 @@
-on: 
-  push:
-    # branches:
-    #   - 'master'
 name: Build Angular
+
+on: push
+# on:
+#   push:
+#     branches:
+#       - 'master'
 jobs:
   build:
     runs-on: ubuntu-latest
