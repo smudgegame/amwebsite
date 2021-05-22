@@ -9,14 +9,13 @@
   margin: auto;
 }
 
-.pixel-art {
-  height: 500px;
-}
-
 .displayed-pic {
   max-width: 350px;
 }
 
 .side-pic {
   max-width: 300px;
+}
+.jumbotron{
+  margin-bottom: 1rem;
 }

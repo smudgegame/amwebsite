@@ -1,27 +1,16 @@
-
-.wrapper {
-text-align: center;
-}
-
 .section{
-  width:100px;
-  display: inline-block;
-  margin-left: 5%;
-  margin-right: 5%;
-  border: 1px solid black;
-  border-radius: 2px;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: #e9ecef;
+  border: 1px solid #e0e3e6;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .section:hover{
-  background-color: lightblue;
-}
-
-.icon{
- width: 20px;
+  background-color: #dbe0e6;
 }
 
 .label{
 text-align: center;
 }
-
-  

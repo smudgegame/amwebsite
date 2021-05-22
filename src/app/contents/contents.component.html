@@ -1,10 +1,31 @@
-
 <div class="container">
     <div class="row">
-        <div class="section"><div class="icon"><img src="assets/icons/person.png"></div><div class="label">Personal </div></div>
-        <div class="section"><div class="icon"><img src="assets/icons/education.png"></div><div class="label">Education </div></div>
-        <a href="assets/Resume.pdf" target="_blank"><div class="section"><div class="icon"><img width="100px;" src="assets/Resume.PNG"></div><div class="label">Resume </div></div></a>
-        <div class="section"><div class="icon"><img src="assets/icons/keyboard.png"></div><div class="label">Coding </div></div>
-        <div class="section" (click)="scrollViewTo('artwork')" ><div class="icon"><img src="assets/icons/art.png"></div><div class="label">Artwork </div></div>
+        <!-- Personal Icon: Directs to Bio of Aaron Margraff -->
+        <div class="section col-sm">
+            <img src="assets/icons/person.png">
+            <div class="label">Personal</div>
+        </div>
+        <!-- Education Icon: Directs to list of institutions Aaron has attended -->
+        <div class="section col-sm">
+            <img src="assets/icons/education.png">
+            <div class="label">Education </div>
+        </div>
+        <!-- Resume Icon: Directs to a printable resume in a new window -->
+        <div class="section col-sm">
+            <a href="assets/Resume.pdf" target="_blank">
+                <img width="100px;" src="assets/Resume.PNG">
+                <div class="label">Resume </div>
+            </a>
+        </div>
+        <!-- Coding Icon: Directs to Projects -->
+        <div class="section col-sm">
+            <img src="assets/icons/keyboard.png">
+            <div class="label">Coding </div>
+        </div>
+        <!-- Artwork Icon: Directs to Artwork -->
+        <div class="section col-sm" (click)="scrollViewTo('artwork')">
+            <img src="assets/icons/art.png">
+            <div class="label">Artwork </div>
+        </div>
     </div>
 </div>
