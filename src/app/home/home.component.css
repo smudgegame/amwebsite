@@ -3,19 +3,14 @@
   width: 100%;
 }
 
-.picture-frame {
-  display: inline-block;
-  text-align: center;
-  margin: auto;
+.jumbotron{
+  margin-bottom: 1rem;
 }
 
 .displayed-pic {
   max-width: 350px;
 }
 
-.side-pic {
-  max-width: 300px;
-}
-.jumbotron{
-  margin-bottom: 1rem;
+.col{
+  text-align: center;
 }
