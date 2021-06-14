@@ -1,11 +1,31 @@
 img{
-    width: 50%;
-    padding: 10px;
+    width: 100%;
+    padding: 5px;
 
 }
 
 .col-sm{
     text-align: right;
-    background-color:#e9ecef;
     padding: 20px;
+}
+
+.project{
+    text-align: right;
+    padding: 20px;
+    border: solid #f7f7f9; 
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%); 
+    margin: 10px;
+}
+
+.title{
+    text-align: left;
+}
+
+.medium{
+    text-align: right;
+    color:lightgray;
+}
+
+.description{
+    text-align: justify;
 }
