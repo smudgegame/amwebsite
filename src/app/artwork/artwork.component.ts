@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, PipeTransform, Pipe} from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Component({

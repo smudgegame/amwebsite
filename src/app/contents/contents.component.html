@@ -1,13 +1,13 @@
 <div class="container">
     <div class="row">
         <!-- Personal Icon: Directs to Bio of Aaron Margraff -->
-        <div class="section col-sm">
-            <img src="assets/icons/Person.png">
+        <div class="section col-sm" (click)="scrollViewTo('personal')">
+            <img src="assets/icons/person.png">
             <div class="label">Personal</div>
         </div>
         <!-- Education Icon: Directs to list of institutions Aaron has attended -->
-        <div class="section col-sm">
-            <img src="assets/icons/Education.png">
+        <div class="section col-sm" (click)="scrollViewTo('education')">
+            <img src="assets/icons/education.png">
             <div class="label">Education </div>
         </div>
         <!-- Resume Icon: Directs to a printable resume in a new window -->
@@ -18,7 +18,7 @@
             </a>
         </div>
         <!-- Coding Icon: Directs to Projects -->
-        <div class="section col-sm">
+        <div class="section col-sm" (click)="scrollViewTo('coding')">
             <img src="assets/icons/keyboard.png">
             <div class="label">Coding </div>
         </div>
