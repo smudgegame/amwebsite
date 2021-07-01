@@ -28,3 +28,4 @@ export class ArtworkComponent implements OnInit {
 
   ngOnInit(): void {}
 }
+
