@@ -1,11 +1,11 @@
-export interface artwork {
-    title: string;
-    medium: string;
-    description:string;
-    image:string;
+export class Artwork {
+    title: string
+    medium: string
+    description: string
+    image: string
   }
   
-  export const artwork = [
+  export const artworks = [
     {
         title:"Desert Scene",
         medium:"Asperite",
@@ -31,4 +31,3 @@ export interface artwork {
         image:"assets/artwork/gifs/CharWalk.gif"
     }
   ];
-  
