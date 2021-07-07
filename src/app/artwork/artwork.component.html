@@ -1,94 +1,19 @@
 <div class="container" id="artwork">
     <h1>Artwork</h1>
-    <p>hello</p>
-    <div *ngFor="let art of artworks">
-        <div class="row">
-            <h2 class="col title">{{art.title}}</h2>
-            <h4 class="col medium">{{art.medium}}</h4>
-        </div>
-        <div class="row">
-            <p class="col description"> {{art.description}}</p>
-            <div class="col art">
-                <img src="{{art.image}}">
+    <div class = "row">
+        <div *ngFor = "let art of artworks" class = "col-md-6">
+            <div class = "project">
+                <div class="row">
+                    <h2 class="col title">{{art.title}}</h2>
+                    <h4 class="col medium">{{art.medium}}</h4>
+                </div>
+                <div class="row">
+                    <p class="col description"> {{art.description}}</p>
+                    <div class="col art">
+                        <img src="{{art.image}}">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-<!-- <div class="row">
-        <div class="col project">
-            <div class="row">
-                <h2 class="col title">Desert Scene</h2>
-                <h4 class="col medium">Asperite</h4>
-            </div>
-            <div class="row">
-                <p class="col description">After reading some Spaceman Spiff comic strips and exploring animations in
-                    Asperite I was inspired. A mysterious figure looks over a desert waste seeing his destination far in
-                    the distance with the setting star of the system.
-                </p>
-                <div class="col art">
-                    <img src="assets/artwork/gifs/Desert.gif">
-                </div>
-            </div>
-        </div>
-        <div class="col col-sm">
-            <img src="assets/artwork/gifs/Small Rocket Engine.gif">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col col-sm">
-            <img src="assets/artwork/gifs/CharWalk.gif">
-        </div>
-        <div class="col col-sm">
-            <img src="assets/artwork/gifs/Pig_Run.gif">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col col-sm">
-            <img src="assets/artwork/gifs/Miniship.gif">
-        </div>
-        <div class="col col-sm">
-            <img src="assets/artwork/gifs/Fire Sprites.gif">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col col-sm">
-            <img src="assets/artwork/images/Pascal.JPG">
-        </div>
-        <div class="col col-sm">
-            <img src="assets/artwork/images/StatueOfLiberty.JPG">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col col-sm">
-            <img src="assets/artwork/images/LostInSpace.JPG">
-        </div>
-        <div class="col col-sm">
-            <img src="assets/artwork/images/iPad Pics keyhole.jpg">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col col-sm">
-            <img src="/assets/artwork/images/Korin.jpg">
-        </div>
-        <div class="col col-sm">
-            <img src="assets/artwork/images/Moria.jpg">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col col-sm">
-            <img src="/assets/artwork/images/Shackleton_and_the_Caird_.jpg">
-        </div>
-        <div class="col col-sm">
-            <img src="/assets/artwork/images/Traveler.jpg">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col col-sm">
-            <img src="/assets/artwork/images/Yajirobe.jpg">
-        </div>
-        <div class="col col-sm">
-            <img src="">
-        </div>
-    </div>
-</div> -->
