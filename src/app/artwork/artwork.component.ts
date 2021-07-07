@@ -1,5 +1,5 @@
-import { Component, OnInit, PipeTransform, Pipe} from '@angular/core';
-import { Observable } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { constants } from './artwork';
 
 @Component({
   selector: 'artwork',
@@ -7,25 +7,10 @@ import { Observable } from 'rxjs';
   styleUrls: ['./artwork.component.css']
 })
 export class ArtworkComponent implements OnInit {
-  
-  artwork: any[];
 
-  constructor() {
-    this.artwork = [
-      {
-        title:"Desert Scene",
-        medium:"Asperite",
-        description:"Desert scene inspired by Spaceman Spiff",
-        image:"assets/artwork/gifs/Desert.gif"
-      },
-      {
-        title:"Rocket Engine",
-        medium:"Asperite",
-        description: "A fun rocket engine",
-        image:"assets/artwork/gifs/Small Rocket Engine.gif"
-      }
-    ];
-  }
+  artworks = constants.artworks
 
-  ngOnInit(): void {}
+  constructor() {}
+
+  ngOnInit(): void { }
 }
