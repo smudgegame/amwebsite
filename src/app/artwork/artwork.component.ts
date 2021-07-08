@@ -10,7 +10,7 @@ export class ArtworkComponent implements OnInit {
 
   artworks = constants.artworks
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void { }
 }

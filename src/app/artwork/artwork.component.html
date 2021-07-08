@@ -1,8 +1,8 @@
 <div class="container" id="artwork">
     <h1>Artwork</h1>
-    <div class = "row">
-        <div *ngFor = "let art of artworks" class = "col-md-6">
-            <div class = "project">
+    <div class="row">
+        <div *ngFor="let art of artworks" class="col-md-6">
+            <div class="project">
                 <div class="row">
                     <h2 class="col title">{{art.title}}</h2>
                     <h4 class="col medium">{{art.medium}}</h4>
@@ -10,7 +10,9 @@
                 <div class="row">
                     <p class="col description"> {{art.description}}</p>
                     <div class="col art">
-                        <img src="{{art.image}}">
+                        <a href="{{art.image}}" target="_blank">
+                            <img src="{{art.image}}">
+                        </a>
                     </div>
                 </div>
             </div>
