@@ -11,6 +11,18 @@ img {
   padding: 5px;
 }
 
+.container {
+  padding: 0px;
+}
+
+.myHeader {
+  padding-left: 15px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  background-color: #e9ecef;
+  border: 1px solid #e0e3e6;
+}
+
 .project {
   text-align: right;
   padding: 20px;

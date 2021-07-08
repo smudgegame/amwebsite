@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-.jumbotron{
+.jumbotron {
   margin-bottom: 1rem;
 }
 
@@ -11,6 +11,15 @@
   max-width: 350px;
 }
 
-.col{
+.col {
   text-align: center;
+}
+
+.side-panel {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+p {
+  -webkit-text-stroke-width: thin;
 }
