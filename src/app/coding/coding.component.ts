@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { constants } from './codeProjects';
 
 @Component({
   selector: 'coding',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./coding.component.css']
 })
 export class CodingComponent implements OnInit {
+
+  codeProjects = constants.codeProjects;
 
   constructor() { }
 
