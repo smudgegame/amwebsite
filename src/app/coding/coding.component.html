@@ -1,5 +1,6 @@
 <div class="container" id="coding">
     <h1 class="myHeader">Coding Projects</h1>
+    <button mat-raised-button color="primary">Play</button>
     <div class="row">
         <div *ngFor="let cp of codeProjects" class="col-md-6">
             <a href="{{cp.url}}" target="_blank">
@@ -8,6 +9,7 @@
                         <div class="col title">
                             <h2 [innerHTML]="cp.title"></h2>
                         </div>
+                        <button mat-raised-button color="primary" *ngIf="cp.play">Play</button>
                         <div class="col language">
                             <h4 [appMath] [innerHTML]="cp.language"></h4>
                         </div>

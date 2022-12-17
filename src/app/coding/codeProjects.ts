@@ -29,6 +29,13 @@ export class constants {
             language:" $\LaTeX$ ",
             description:"I could have used MSword to make this resum&eacute; but I wanted to use what I have learned making materials as a math teacher. I adapted a premade resum&eacute; class to fit my desired style.",
             url:"https://github.com/smudgegame/amresume"
+        },
+        {
+            title: "Satellite Game",
+            language: "Kotlin",
+            description: "A simple little spaceship game made with a friend during a code-jam weekend. We used the Korgie game engine. I learned little more about Kotlin.",
+            url: "https://github.com/smudgegame/Satellite",
+            play: true
         }
     ];
 }

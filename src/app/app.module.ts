@@ -9,6 +9,8 @@ import { EducationComponent } from './education/education.component';
 import { CodingComponent } from './coding/coding.component';
 import { ArtworkComponent } from './artwork/artwork.component';
 import { MathModule } from './math.module';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { MathModule } from './math.module';
   ],
   imports: [
     BrowserModule,
-    MathModule.forRoot() 
+    MathModule.forRoot(),
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
