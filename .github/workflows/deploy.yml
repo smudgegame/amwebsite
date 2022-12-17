@@ -3,10 +3,10 @@ name: Deploy Angular
 on:
   push:
     branches:
-      - 'master'
+      - "master"
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v1
@@ -18,10 +18,10 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Node 12.x
+      - name: Node 16.x
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: 16.x
       - name: npm install and npm run build
         run: |
           npm i
