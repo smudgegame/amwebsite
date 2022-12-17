@@ -6,6 +6,9 @@
     "amwebsite": {
       "projectType": "application",
       "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
         "@schematics/angular:application": {
           "strict": true
         }
@@ -28,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -59,13 +63,21 @@
                   "maximumError": "4kb"
                 }
               ]
+            },
+            "development":{
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "amwebsite:build"
+            "browserTarget": "amwebsite:build:development"
           },
           "configurations": {
             "production": {
@@ -123,6 +135,5 @@
         }
       }
     }
-  },
-  "defaultProject": "amwebsite"
+  }
 }
