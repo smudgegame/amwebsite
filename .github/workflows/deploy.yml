@@ -1,9 +1,9 @@
-name: Deploy Angular
+name: Deploy Website
 
 on:
   push:
     branches:
-      - master
+      - archive-angular
 
 jobs:
   deploy:
