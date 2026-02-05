@@ -1,0 +1,51 @@
+.projects {
+  background: #0f172a;
+  color: #e5e7eb;
+  min-height: 100vh;
+  padding: 4rem 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.projects h2 {
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.75rem;
+}
+
+.project-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: #38bdf8;
+  transform: translateY(-2px);
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #f8fafc;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #cbd5f5;
+}
+
+.project-meta {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
