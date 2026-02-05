@@ -6,11 +6,11 @@ export default function ProfessionalSection() {
       <h1>Aaron Margraff</h1>
       <p>Software Engineer</p>
 
-      <pre className="terminal">
-        {`> building systems
-        > learning relentlessly
-        > shipping carefully`}
-      </pre>
+        <pre className="terminal">
+            &gt; building systems{'\n'}
+            &gt; learning relentlessly{'\n'}
+            &gt; shipping carefully<span className="cursor">_</span>
+        </pre>
     </section>
   )
 }
