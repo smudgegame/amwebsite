@@ -9,7 +9,8 @@ export default function ProfessionalSection() {
         <pre className="terminal">
             &gt; building systems{'\n'}
             &gt; learning relentlessly{'\n'}
-            &gt; shipping carefully<span className="cursor">_</span>
+            &gt; shipping carefully{'\n'}
+            &gt; <span className="cursor">_</span>
         </pre>
     </section>
   )
