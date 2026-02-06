@@ -4,11 +4,11 @@ import PersonalSection from './Sections/Personal/PersonalSection'
 
 function App() {
   return (
-    <>
-      <ProfessionalSection />
-      <ProjectsSection />
-      <PersonalSection />
-    </>
+    <main className="page">
+        <ProfessionalSection />
+        <ProjectsSection />
+        <PersonalSection />
+    </main>
   )
 }
 
