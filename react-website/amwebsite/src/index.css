@@ -11,6 +11,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --ui-outline-width: 1px;
+  --section-pad-block: clamp(1.4rem, 4vw, 2.75rem);
+  --section-pad-inline: clamp(1.2rem, 3.2vw, 2.4rem);
+  --section-gap: var(--section-pad-block);
 }
 
 body {
@@ -70,11 +74,30 @@ button:focus-visible {
   margin-inline: auto;
   min-height: 100vh;
   background: #242424;
+  box-sizing: border-box;
+  border-left: var(--ui-outline-width) solid rgba(148, 163, 184, 0.45);
+  border-right: var(--ui-outline-width) solid rgba(148, 163, 184, 0.45);
 }
 
 .section {
   min-height: 100vh;
-  padding: clamp(1.5rem, 4vw, 4rem);
+  padding: var(--section-pad-block) var(--section-pad-inline);
   box-sizing: border-box;
-  scroll-margin-top: 2rem; /* for smooth scrolling to sections */
+  scroll-margin-top: 2rem;
 }
+
+.stack {
+  position: relative;
+}
+
+.stack-section {
+  min-height: 100vh;
+  position: relative;
+}
+
+.section-divider {
+  height: clamp(80px, 14vw, 140px);
+  background: linear-gradient(to bottom, var(--from-color), var(--to-color));
+}
+
+

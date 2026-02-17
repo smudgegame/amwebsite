@@ -1,8 +1,7 @@
 .projects {
-  background: #0f172a;
   color: #e5e7eb;
   min-height: 100vh;
-  padding: 4rem 3rem;
+  padding: var(--section-pad-block) var(--section-pad-inline);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -49,3 +48,4 @@
   font-size: 0.8rem;
   color: #94a3b8;
 }
+
