@@ -16,6 +16,15 @@ export default function ProjectsSection() {
           <p>My original personal site — archived but relavant.</p>
         </div>
       </div>
+
+      <p>Here are some fun projects I’ve been working on:</p>
+      <ul>
+        <li>Multiplayer FPS (Godot)</li>
+        <li>Spaceship flying game (Godot)</li>
+        <li>Angular website (archived)</li>
+        <li>LaTeX / technical docs</li>
+      </ul>
+      <p>Click to expand this section.</p>
     </section>
   )
 }
