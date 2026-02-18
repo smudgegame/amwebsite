@@ -12,6 +12,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --ui-outline-width: 1px;
+  --ui-radius: 12px;
+  --ui-panel-border-color: rgba(148, 163, 184, 0.45);
+  --ui-panel-bg: linear-gradient(165deg, #101828 0%, #0b1220 100%);
+  --ui-eyebrow-color: #93c5fd;
+  --ui-eyebrow-size: 0.88rem;
+  --ui-eyebrow-weight: 700;
+  --ui-eyebrow-tracking: 0.11em;
+  --ui-pane-height: clamp(500px, 46vh, 600px);
   --section-pad-block: clamp(1.4rem, 4vw, 2.75rem);
   --section-pad-inline: clamp(1.2rem, 3.2vw, 2.4rem);
   --section-gap: var(--section-pad-block);
@@ -36,7 +44,7 @@ h1, h2, h3 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: var(--ui-radius);
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -56,6 +64,21 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.ui-panel {
+  border: var(--ui-outline-width) solid var(--ui-panel-border-color);
+  border-radius: var(--ui-radius);
+  background: var(--ui-panel-bg);
+}
+
+.ui-eyebrow {
+  margin: 0;
+  color: var(--ui-eyebrow-color);
+  font-size: var(--ui-eyebrow-size);
+  font-weight: var(--ui-eyebrow-weight);
+  letter-spacing: var(--ui-eyebrow-tracking);
+  text-transform: uppercase;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -70,13 +93,13 @@ button:focus-visible {
 }
 
 .page {
-  max-width: 960px;
+  width: min(1400px, 70vw);
   margin-inline: auto;
   min-height: 100vh;
   background: #242424;
   box-sizing: border-box;
-  border-left: var(--ui-outline-width) solid rgba(148, 163, 184, 0.45);
-  border-right: var(--ui-outline-width) solid rgba(148, 163, 184, 0.45);
+  border-left: var(--ui-outline-width) solid var(--ui-panel-border-color);
+  border-right: var(--ui-outline-width) solid var(--ui-panel-border-color);
 }
 
 .section {
@@ -99,5 +122,6 @@ button:focus-visible {
   height: clamp(80px, 14vw, 140px);
   background: linear-gradient(to bottom, var(--from-color), var(--to-color));
 }
+
 
 
