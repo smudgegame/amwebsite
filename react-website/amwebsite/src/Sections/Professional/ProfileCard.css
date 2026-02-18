@@ -1,12 +1,13 @@
 .profile-card {
+  box-sizing: border-box;
   display: flex;
   gap: 1rem;
   align-items: center;
-  width: min(100%, 560px);
+  width: 100%;
+  max-width: none;
+  height: 100%;
   padding: 1.1rem 1.2rem;
-  border: var(--ui-outline-width) solid rgba(148, 163, 184, 0.45);
-  border-radius: 14px;
-  background: linear-gradient(165deg, #101828 0%, #0b1220 100%);
+  border-radius: var(--ui-radius);
   box-shadow: 0 18px 30px rgba(2, 6, 23, 0.35);
   color: #e2e8f0;
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -14,8 +15,8 @@
 
 .profile-card__avatar {
   flex: 0 0 auto;
-  width: 112px;
-  height: 112px;
+  width: 132px;
+  height: 132px;
   border-radius: 50%;
   border: 2px solid rgba(203, 213, 225, 0.65);
   overflow: hidden;
@@ -43,10 +44,6 @@
 
 .profile-card__label {
   margin: 0;
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.11em;
-  color: #93c5fd;
 }
 
 .profile-card__name {
@@ -64,7 +61,7 @@
 .profile-card__meta {
   margin-top: 0.65rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.55rem;
   align-items: center;
 }
@@ -83,16 +80,26 @@
 .profile-card__location {
   color: #94a3b8;
   font-size: 0.86rem;
+  white-space: nowrap;
 }
 
 @media (max-width: 560px) {
   .profile-card {
     align-items: flex-start;
+    height: auto;
   }
 
   .profile-card__avatar {
-    width: 88px;
-    height: 88px;
+    width: 104px;
+    height: 104px;
+  }
+
+  .profile-card__meta {
+    flex-wrap: wrap;
+  }
+
+  .profile-card__location {
+    white-space: normal;
   }
 }
 

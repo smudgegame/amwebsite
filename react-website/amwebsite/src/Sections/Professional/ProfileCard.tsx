@@ -25,7 +25,7 @@ export default function ProfileCard({
     .join('')
 
   return (
-    <article className="profile-card" aria-label="Professional profile card">
+    <article className="profile-card ui-panel" aria-label="Professional profile card">
       <div className="profile-card__avatar" aria-hidden="true">
         {!imageError ? (
           <img
@@ -40,7 +40,7 @@ export default function ProfileCard({
       </div>
 
       <div className="profile-card__content">
-        <p className="profile-card__label">Profile</p>
+        <p className="profile-card__label ui-eyebrow">Profile</p>
         <h1 className="profile-card__name">{name}</h1>
         <p className="profile-card__role">{role}</p>
 
